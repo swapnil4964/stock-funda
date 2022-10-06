@@ -9,7 +9,7 @@
 
 .container-fluid{
     width: 380px;
-    margin: 64px auto;
+    margin: 0 auto;
     padding: 32px;
     box-shadow: 0 0 4px 1px #c6c6c6;
     overflow: auto;
@@ -21,7 +21,7 @@
     background: #03a9f4;
     border: 0;
     border-radius: 8px;
-    box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 rgb(29 13 202 / 9%);
+    box-shadow: 0px 0px 8px 0 #fff, 10px 10px 30px 0 rgba(29, 13, 202, 0.09);
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
@@ -56,7 +56,6 @@
     height: 100vh;
     width: 100%;
     background: #fff;
-    opacity: 0.8;
     position: absolute;
     top: 0;
     right: 0;

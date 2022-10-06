@@ -10,6 +10,7 @@ export class AppComponent {
   ratio1 = 0;
   ratio2 = 0;
   cmp = 0;
+  message = 'Coming Soon';
 
   getAverage() {
     console.log('Average should be calculated');

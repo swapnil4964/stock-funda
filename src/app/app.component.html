@@ -1,3 +1,6 @@
+<div id="appMessage">{{message}}<i class="fa fa-line-chart fa-flip"
+        style="--fa-animation-duration: 3s; margin-left: 16px;" aria-hidden="true"></i>
+</div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
@@ -33,8 +36,8 @@
             <h5 id="result"></h5>
         </div>
         <div class="col-md-12 st">
-            <button class="btn btn-success" onclick="getAverage()"> Calculate Average</button>
-            <button class="btn btn-warning" onclick="clearFields()">Clear Fields</button>
+            <button class="btn btn-success" (click)="getAverage()"> Calculate Average</button>
+            <button class="btn btn-warning" (click)="clearFields()">Clear Fields</button>
         </div>
     </div>
 </div>

@@ -9,7 +9,7 @@
 
 .container-fluid{
     width: 380px;
-    margin: 0 auto;
+    margin: 64px auto;
     padding: 32px;
     box-shadow: 0 0 4px 1px #c6c6c6;
     overflow: auto;
@@ -50,4 +50,21 @@
   .button-67 {
     padding: 24px;
   }
+}
+
+#appMessage{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 64px;
+    color: #1e68ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

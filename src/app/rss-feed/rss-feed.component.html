@@ -1,13 +1,35 @@
-<ul>
-    <ng-container *ngFor="let news of resultNews">
-        <li>
-            <a [href]="news?.LINK[0]" target="_blank">
-                <div [innerHTML]="news?.DESCRIPTION[0]"></div>
-                <div>
-                    <div>{{news?.TITLE[0]}}</div>
-                    <div>{{news?.PUBDATE[0] | date: 'fullDate'}}</div>
-                </div>
-            </a>
-        </li>
-    </ng-container>    
-</ul>
+<ng-container>
+    <div id="btn-wrapper">
+        <button [disabled]="loading" (click)="getRssFeedFromMoneycontrol()">Moneycontrol Feeds</button>
+        <button [disabled]="loading" (click)="getRssFeedFromZBussiness()">Zee Business Feeds</button>    
+    </div>    
+</ng-container>
+
+<section style="display: flex;">
+    <ul *ngIf="!loading">
+        <ng-container *ngFor="let news of resultNews">
+            <li>
+                <a (click)="selectFeed(news?.LINK[0])">
+                    <div style="margin-right: 16px;" [innerHTML]="news?.DESCRIPTION[0]"></div>
+                    <div>
+                        <div>{{news?.TITLE[0]}}</div>
+                        <div>{{news?.PUBDATE[0] | date: 'fullDate'}}</div>
+                    </div>
+                </a>
+            </li>
+        </ng-container>    
+    </ul>
+    <div style="    position: relative;
+    width: 60%;
+    height: calc(100vh - 82px);
+    overflow: auto;" *ngIf="resultNews?.length">
+        <div *ngIf="feedLoading">
+            <app-loader></app-loader>
+        </div>    
+        <div [innerHTML]="selectedFeedUrl"></div>
+    </div>
+    
+    <!-- <div *ngIf="loading">
+        <app-loader></app-loader>
+    </div> -->
+</section>

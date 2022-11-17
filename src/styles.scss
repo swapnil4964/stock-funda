@@ -6,8 +6,6 @@ body{
     position: relative;
     min-height: 100vh;
     margin: 0;
-    // background-color: #000;
-    // color: #fff;
 }
 
 footer{
@@ -18,4 +16,13 @@ footer{
     width: 100%;
     background: #000;
     color: #03a9f4;
+}
+
+
+#loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-36%, -50%);
+    font-size: xx-large;
 }

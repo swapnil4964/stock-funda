@@ -8,13 +8,15 @@ import { RssFeedComponent } from './rss-feed/rss-feed.component';
 import { RssFeedsService } from './shared/rss-feeds.service';
 import { Xml2jsonService } from './shared/xml2json.service';
 import { HttpClientModule } from '@angular/common/http';
+import { LoaderComponent } from './shared/components/loader/loader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BonusShareCalculatorComponent,
     SideNavComponent,
-    RssFeedComponent
+    RssFeedComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

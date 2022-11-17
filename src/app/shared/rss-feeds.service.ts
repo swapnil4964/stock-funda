@@ -8,13 +8,22 @@ import { Observable } from 'rxjs';
 export class RssFeedsService {
   
   requestOptions: Object = {
-    observe: "body",
-    responseType: "text"
+    observe: 'body',
+    responseType: 'text',
+    contentType: 'application/rss+xml; charset=utf-8'
   };
 
   constructor(private httpClient: HttpClient) { }
 
-  getResultNews(): Observable<any>{
+  getResultNewsMoneycontrol(): Observable<any>{
     return this.httpClient.get<any>("https://www.moneycontrol.com/rss/results.xml", this.requestOptions)
+  }
+
+  getNewsZBusiness(): Observable<any>{
+    return this.httpClient.get<any>('https://www.zeebiz.com/india-markets.xml', this.requestOptions)
+  }
+
+  getHtmlPage(url: string): Observable<any>{
+    return this.httpClient.get('https://www.moneycontrol.com/news/results/shardul-sec-consolidated-september-2022-net-sales-at-rs-1031-crore2343-y-o-y_16740201.html',{responseType:'text'});
   }
 }

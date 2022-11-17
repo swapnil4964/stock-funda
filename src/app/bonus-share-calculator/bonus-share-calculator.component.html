@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-md-12">
+        <header>
+            <h2 style="color: #929292;margin-top: 15px;">Stock market bonus calculator</h2>
+        </header>
+        <hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 st">
+        <label style="margin-right:10px;">Current Market Price(CMP)</label>
+        <input class="form-control" type="number" id="" placeholder="CMP">
+        <hr>
+        <div style="    display: flex;
+    align-items: center;">
+            <label style="margin-right:10px;">Bonus Ratio</label>
+            <input class="form-control" type="number" id=""> <span style="margin: 0 16px;">/</span><input
+                class="form-control" type="number" id="">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h5 id="investedamount1"></h5>
+    </div>
+    <div class="col-md-4">
+        <h5 id="investedamount2"></h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 st">
+        <h5 id="result"></h5>
+    </div>
+    <div class="col-md-12 st">
+        <button class="btn btn-success" (click)="getAverage()"> Calculate Average</button>
+        <button class="btn btn-warning" (click)="clearFields()">Clear Fields</button>
+    </div>
+</div>

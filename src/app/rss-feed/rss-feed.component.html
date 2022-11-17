@@ -1,0 +1,13 @@
+<ul>
+    <ng-container *ngFor="let news of resultNews">
+        <li>
+            <a [href]="news?.LINK[0]" target="_blank">
+                <div [innerHTML]="news?.DESCRIPTION[0]"></div>
+                <div>
+                    <div>{{news?.TITLE[0]}}</div>
+                    <div>{{news?.PUBDATE[0] | date: 'fullDate'}}</div>
+                </div>
+            </a>
+        </li>
+    </ng-container>    
+</ul>

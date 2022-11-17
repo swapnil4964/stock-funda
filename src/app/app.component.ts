@@ -12,13 +12,5 @@ export class AppComponent {
   cmp = 0;
   message = 'Coming Soon';
 
-  getAverage() {
-    console.log('Average should be calculated');
-    return;
-  }
-
-  clearFields() {
-    console.log('Should clear all the fields');
-    return;
-  }
+  
 }

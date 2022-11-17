@@ -1,0 +1,44 @@
+/* CSS */
+.btn {
+    background: #03a9f4;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0 #fff, 10px 10px 30px 0 rgba(29, 13, 202, 0.09);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 8px;
+    font-weight: bolder;
+    transition: 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    width: max-content;
+    word-break: normal;
+    word-spacing: normal;
+    font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    margin-right: 16px;
+}
+
+.button-67:hover {
+  background: #f8f8ff;
+  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+}
+
+@media (min-width: 768px) {
+  .button-67 {
+    padding: 24px;
+  }
+}
+
+.form-control{
+    width: 56px;
+    height: 24px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 2px 1px #03a9f4;
+}
